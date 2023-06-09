@@ -2,15 +2,15 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-struct CadastroOrientador
+typedef struct CadastroOrientador
 {
   int id;
   char nome[50];
   char email[30];
   char telefone[20];
   char linkCurriculoLattes[50];
-};
-struct CadastroAluno
+} cadO;
+typedef struct CadastroAluno
 {
   int id;
   char nome[50];
@@ -18,9 +18,9 @@ struct CadastroAluno
   char telefone[20];
   char matriculaSuap[12]
   char endereco[100];
-};
+} cadA;
 
-struct CadastroMonografia
+typedef struct CadastroMonografia
 {
   int id1;
   int id2;
@@ -29,7 +29,7 @@ struct CadastroMonografia
   char tituloMonografia[50];
   bool status;
   char membrosBanca[50][50];
-};
+} cadM;
 
 void funcaoCadastroMonografias(struct CadastroMonografia)
 {
@@ -40,7 +40,7 @@ void funcaoCadastroAlunosOrientadores(int op)
 {
     if(op = 1)
     {
-
+    
 
     }
     else
@@ -53,7 +53,7 @@ void funcaoCadastroAlunosOrientadores(int op)
 void funcaoMenu()
 {
     int opcao;
-    printf("Escolha qual a opção de cadastro: \n");
+    printf("Escolha qual a opÃ§Ã£o de cadastro: \n");
     scanf("%d", &opcao);
 
     switch(opcao)
@@ -72,6 +72,14 @@ void funcaoMenu()
 }
 int main()
 {
+
+
+
+
+
+
+    return 0;
+}
 
 
 
