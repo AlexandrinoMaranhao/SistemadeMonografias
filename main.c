@@ -10,7 +10,8 @@ typedef struct CadastroOrientador
   char telefone[20];
   char linkCurriculoLattes[50];
 } cadO;
-typedef struct CadastroAluno
+
+typedef struct CadastroAluno // Struct para armazenar os dados 
 {
   int id;
   char nome[50];
@@ -70,17 +71,12 @@ void funcaoMenu()
     }
 
 }
+
 int main()
 {
-
-
-
-
-
-
-    return 0;
-}
-
+  
+  printf(":::: Bem-Vindo ao SisCAD EduIFMA ::::");
+  printf("\n ")
 
 
 
