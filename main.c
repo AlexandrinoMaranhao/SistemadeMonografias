@@ -18,11 +18,12 @@ typedef struct cadastroAluno      //Struct para receber os dados de cadastro de 
   char nome[50];
   char email[30];
   char telefone[20];
-  char matriculaSuap[12]
+  char matriculaSuap[12];
   char endereco[100];
 } cadA;
 
-typedef struct cadastroMonografia      //Struct para recebr os dados de cadastro de monografias
+typedef struct cadastroMonografia   //Struct para recebr os dados de cadastro de monografias
+{
   int id1;
   int id2;
   int id3[2];
@@ -32,16 +33,16 @@ typedef struct cadastroMonografia      //Struct para recebr os dados de cadastro
   char membrosBanca[50][50];
 } cadM;
 
-	void funcaoCadastroMonografias(struct cadastroMonografia)
+	void funcaoCadastroMonografias(struct cadastroMonografia * cadM)
 	{
         
 
 	}
 	void funcaoCadastroAlunosOrientadores(int op)
 	{
-		if(op = 1)
+		if("op = 1")
 		{
-          printf()  
+          printf();  
 
 		}
 		else
@@ -54,19 +55,26 @@ typedef struct cadastroMonografia      //Struct para recebr os dados de cadastro
 	void funcaoMenu()
 	{
     int opcao;
-    printf("Escolha qual a opção de cadastro: \n");
+    do
+      {
+    printf(":::: Bem-Vindo ao SisCAD Edu ::::");
+    printf("\n:::\tMENU do SISCAD\t::: ");
+    printf("\n1) Cadastro de Orientador.");
+    printf("\n2) Cadastro de Aluno.");
+    printf("\n3) Cadastro de Monografia.");
+    printf("\n4) Saída do Sistema.");
     scanf("%d", &opcao);
 
-		switch(opcao)
-		{
-		case 1:
-         funcaoCadastroAlunosOrientadores(op);
+	switch(opcao)
+	{
+	case 1:
+         funcaoCadastroAlunosOrientadores(op, struct cadO);
          break;
-		case 2:
-         funcaoCadastroAlunosOrientadores(op);
+	case 2:
+         funcaoCadastroAlunosOrientadores(op, struct cadA);
         break;
-		case 3:
-         funcaoCadastroMonografias();
+	case 3:
+         funcaoCadastroMonografias(struct cadM);
          break;
         case 4:
          printf("Você saiu do SisCAD com sucesso.");
@@ -75,23 +83,13 @@ typedef struct cadastroMonografia      //Struct para recebr os dados de cadastro
          printf("Opção Inválida!!");
          break;
 	    }
+      }while(opcao != 4);
 	}
 
 
 int main()
 {
-	printf(":::: Bem-Vindo ao SisCAD Edu ::::");
-    printf("\n:::\tMENU do SISCAD\t::: ");
-    printf("\n1) Cadastro de Orientador.");
-    printf("\n2) Cadastro de Aluno.");
-    printf("\n3) Cadastro de Monografia.");
-    printf("\n4) Saída do Sistema.");
-    
-    while(opcao != 4)
-    {
-      funcaoMenu();
-      
-    }
-
+	 printf("Esse sistema experimental se propõe a ser um sistema de cadastros de monografias");
+  printf("\nAcesse o nosso menu");
     return 0;
 }
