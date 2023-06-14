@@ -3,11 +3,13 @@
 ESCREVE AQ OQ TEM Q FAZER DETALHADAMENTE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 1) O problema:
-a. Criação de um software em C para controle de monografias do curso de SI do
+a]
+Criação de um software em C para controle de monografias do curso de SI do
 IFMA.
 
 3) O programa deverá possuir:
-a. MENU com:
+a]
+MENU com:
 1. Cadastro de orientadores
 • ID (numérico e único)
 • Nome
@@ -39,7 +41,7 @@ string)
 9. Carregamento das informações a partir de arquivo
     
 3) Itens obrigatórios:
-a. Identação e Legibilidade de código
-b. Utilização de funções
-c. Utilização de structs
-d. Utilização de vetores e/ou matrizes
+a] Identação e Legibilidade de código
+b] Utilização de funções
+c] Utilização de structs
+d] Utilização de vetores e/ou matrizes
